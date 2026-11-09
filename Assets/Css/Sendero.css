@@ -99,7 +99,7 @@ section#content {
     width: 100%;
     padding-top: 2%;
     padding-bottom:5%;
-    background-image: url("/Assets/Imagenes/s2.png");
+    background-image: url("../Imagenes/s2.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -137,7 +137,7 @@ section#content {
     width: 100%;
     height: auto;
     padding-top: 2%;
-    background-image: url("/Assets/Imagenes/mapafondos2.png");
+    background-image: url("../Imagenes/fondoS2.png");
     background-size: cover;
     background-position: center;
 }
@@ -185,7 +185,7 @@ section#content {
     flex-wrap: wrap;
     font-style: italic;
     font-size: 20px;
-    background-image: url("/Assets/Imagenes/fondoS2.png");
+    background-image: url("../Imagenes/fondoS2.png");
 
 }
 
@@ -245,7 +245,7 @@ section#content {
 #slider{
     width: 1800px;
     height: 90px;
-    background-image: url(/Assets/Imagenes/carruusel2.png);
+    background-image: url("../Imagenes/carruusel2.png");
     background-size: 100% 100%;
     animation: slider 40s infinite linear;
     position: relative; 

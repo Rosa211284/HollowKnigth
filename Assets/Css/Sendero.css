@@ -26,8 +26,16 @@ html, body {
     text-decoration: none;
     color: aliceblue;
     padding: 25px;
+    transition: all 0.3s ease;
     
 }
+
+#barra a:hover {
+    color: white;
+    text-shadow: 0 0 10px #ffffff;
+    transform: scale(1.08);
+}
+
 .barra img{
     padding: 10px;
     padding-left: 15px;
@@ -35,6 +43,8 @@ html, body {
     height: auto;
     float: left;
 }
+
+
 /*---------------barra sola----------------------------------------*/
 .barra_sola{
     width: 100%;
@@ -144,6 +154,7 @@ section#content {
 
 .personajes{
     width: 60%;
+    height: 60%;
     height: 250px;
     background-color: rgb(23, 0, 87);
     display: flex;
@@ -153,6 +164,7 @@ section#content {
 .personajes2{
     float: right;
     width: 60%;
+     height: 60%;
     height: 250px;
     background-color: rgb(23, 0, 87);
     display: flex;

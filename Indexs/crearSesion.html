@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../Assets/Css/Registro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Formulario para php de contacto 7w7</title>   
 </head>
 <body>
-    
+    <div class="contenedor__seccion--contacto"><!----metodologia de bemm giones-->
+        <div class="contenedor__formulario--contacto">
+        <h2>Bienvenido a Hallownest</h2>
+                <p>Ya tienes una cuenta?</p>
+            <div class="formulario-contacto__Sesion">
+                <a href="inicioSesion.html">Iniciar sesion</a>
+               
+            </div>
+            </div>
+
+                <!----Formulario----->
+                <form class="formulario-contacto">
+                    
+                     <!----contenedor de los inputs----->
+                    <div class="formulario-contacto">
+                        <h2>Crear Cuenta</h2>
+                        <div class="formulario-contacto__input">
+                         <p>Nombre del usuarios</p>
+                            <input type="text" name="nombre" placeholder="Nombre(s)">
+                            <small class="error" id="error-nombre"></small>
+                        </div>
+                    </div>
+
+                 <div class="formulario-contra">
+
+                        <div class="formulario-contacto__input">
+                            <p>Contraseña</p>
+                            <input type="text" name="contra" placeholder="Contrasena">
+                            <small class="error" id="error-contra"></small>
+                        </div>
+                    </div>
+
+                <div class="formulario-contacto">
+
+                        <div class="formulario-contacto__input">
+                            <p>Correo</p>
+                            <input type="text" name="correo" placeholder="example@gmail.com">
+                            <small class="error" id="error-correo"></small>
+                        </div>
+            
+             <br><br>
+
+                 <!------Boton de enviar------->
+                <div class="formulario-contacto__boton">
+                    <button type="submit" id="btnEnviar">Registrar</button>
+                </div>
+                
+
+                <!-----Mensaje global------->
+
+                <div class="formulario-contacto__mensaje-Global" id="MensajeGlobal"></div>
+
+                <!----Loading-->
+                <div class="formulario-contacto__loading" id="loading">
+                    <div class="spinner">
+                        <p>Procesando...</p>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+
 </body>
+<script type="module" src="../Assets/Js/Formulario_Contacto.js"></script>
+
+<!---tarea fontawesome--->
+
 </html>

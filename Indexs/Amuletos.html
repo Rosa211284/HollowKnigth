@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Assets/Css/Amuletos.css">
+       
+        <title>Creaciond de amueltos</title>
+    </head>
+    <body>
+        <audio src="../Assets/Musica/amuletos.mp3" autoplay loop></audio>
+        <!--------------------barra inicio----------------------------------------->
+         <div class="barra">
+        <img src="../Assets/Imagenes/logo.png" alt="logo hollow">
+         <a href="../index.html">Ciervo Caminante</a>
+        </div><br><br>
+        <img src="../Assets/Imagenes/salubra.png" width="100%" height="90%">
+
+        <!--------------------Barra crear amueltos----------------------------------------->
+         <div class="barra_sola" id="barra1"><h1>- Creacion de Amuletos -</h1></div> 
+        <!--------------------Explicacion amueltos----------------------------------------->
+     
+
+         <!-- ---------------------- Item Plantilla ------------------------ -->
+   <div id="contenido-centrado">
+            <div id="ColeccionItems">
+                <!-- ---------------------- Item Plantilla ------------------------ -->
+                <div class="ContenedorItem">
+                   
+                    <div class="Imagen"></div>
+                    <div class="Titulo">
+                    </div>
+                    <div class="Descripcion"></div>
+                    <img class="Icono_Borrar" src="../Assets/Imagenes/basura.png"/>
+                    <img class="Icono_Editar" src="../Assets/Imagenes/escribir.png"/>
+ 
+                    <div class="PanelCreacionItem">
+                        <div class="CrearItem_titulo"></div>
+                        <input class="CrearItem_InputTitulo" type="text" placeholder="Titulo del amuleto" />
+                        <div class="CrearItem_instruccionImagen" ></div>
+                        <img class="ImagenPreview" />
+                        <input type="file" class="input_imagen"/>
+                        <div class="CrearItem_titulo"></div>
+                        <textarea rows="4" cols="50"  placeholder="Describe tu amuleto"></textarea>
+                        <button class="boton_cancelar" type="button">Cancelar</button>
+                        <button class="boton_guardar" type="button">Guardar</button>
+                    </div>
+                </div>
+ 
+                <!-- ---------------------- Item Plantilla ------------------------ -->
+                <div class="PantallaAgregarItem" onclick="CrearTarjeta()">
+                    <img class="icono_agregar" src="../Assets/Imagenes/mas.png" width="100%"/>
+                </div>
+               
+            </div>
+        </div>
+         <!--------------------Barra crear amueltos----------------------------------------->
+         <div class="barra_sola" id="barra2"><h1>- Amuletos de Hollow Knigth -</h1></div> 
+ 
+          >
+        <div id="salubra1" onclick="Cambio_imagen()"></div>
+    
+         <!--------------------Barra crear amueltos----------------------------------------->
+         <div class="barra_sola" id="barra1"><h1>- Amuletos de Hollow Knigth -</h1></div> 
+         <div class="amuletos_juego">
+        </div>
+         <div class="amuletos">
+             <div class="imagen_amuletos">
+             <img src="">
+            </div>
+            <div class="datos_amuletos">
+                <h2 class="titulo_Amueltos"></h2><br>
+                <p class="descripcion_Amuletos"></p> 
+            </div>
+            
+        </div>
+         </div>
+
+         <footer>
+    <div class="barra_sola"><img src="../Assets/Imagenes/logo.png" width="10%"></div>
+</footer>
+    </body>
+    
+   
+  
+    <script src="js/cambiarImagen.js"></script>
+    <script src="../Assets/Js/conectarApi.js"></script>
+</html>

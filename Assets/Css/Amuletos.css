@@ -1,0 +1,359 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.PanelCreacionItem{
+    font-size: 24px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: calc(100% - 100px);
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #000000b6;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+body{
+    background-size: 100%;
+    background-color: #000000;
+}
+
+header{
+    height: 250px;
+    font-family: "Seagram tfb";
+}
+
+header img{
+    width: 1200px;
+    max-width: 100%;
+    height: 200px;
+    position: absolute;
+    left: calc(50% - 600px);
+    top: -0px;
+    filter: drop-shadow(20px 30px 40px rgba(67, 51, 44, 1));
+    transition: transform 0.2s ease-in-out;
+}
+
+header img:hover{
+    transform: scale(1.1);
+}
+
+header div{
+    top: 60px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    pointer-events: none;
+}
+
+#contenido-centrado{
+    float: left;
+    width: 100%;
+    background-image: url("/Assets/Imagenes/s1.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#ColeccionItems{
+    margin: auto;
+    width: 100%;
+    max-width: 1400px;
+    
+}
+.Titulo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #07070783;
+    color: #f0f0f0;
+    width: 100%;
+    transition: all 0.2s ease-out;
+}
+
+.ContenedorItem{
+    width: calc(33.3333% - 20px * 2);
+    margin: 20px;
+    margin-bottom: 60px;
+    height: 600px;
+   background-color: #000000;
+   border-radius: 5px;
+    box-shadow: 10px 30px 30px #ff87ef33;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+
+.Imagen{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-out;
+    transform: translateY(50px);
+}
+
+
+.Icono_Borrar{
+    top: 60px;
+    right: 10px;
+    position: absolute;
+    width: 70px;
+    transition: all 0.1s ease-out;
+}
+.Icono_Borrar:hover{
+    opacity: 0.9;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.Icono_Editar{
+    top: 120px;
+    right: 10px;
+    position: absolute;
+    width: 70px;
+    opacity: 0.6;
+}
+.Icono_Editar:hover{
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+    transform: scale(1.1);
+}
+
+.Descripcion{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(3, 2, 4, 0.433);
+    padding: 30px;
+    color: white;
+    opacity: 0.1;
+    font-size: 20px;
+    transition: bottom 0.2s ease-out;
+}
+
+
+.Descripcion:hover{
+    opacity: 1;
+}
+
+
+
+.PanelCreacionItem div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.CrearItem_titulo{
+    width: calc(100%);
+}
+
+.CrearItem_instruccionImagen{
+    width: 100%;
+}
+
+.PanelCreacionItem input{
+    font-size: 18px;
+    width: calc(100% - 40px);
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+}
+
+.PanelCreacionItem img{
+    width: 100%;
+    height: 100px;
+}
+
+.Campo_Descripcion{
+    height: 200px;
+}
+
+
+textarea{
+    font-size: 18px;
+    width: calc(100% - 40px);
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: dimgrey;
+    border-radius: 5px;
+    border: none;
+    resize: vertical;
+}
+
+button{
+    margin-top: 10px;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.boton_cancelar{
+    background-color: #44006b;
+}
+
+/*--------poner datos tarjeta 7w7------*/
+.PantallaAgregarItem{
+    width: 100%;
+    height: 100%;
+    color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(33.3333% - 20px * 2);
+    margin: 20px;
+    margin-bottom: 60px;
+    height: 600px;
+    border-radius: 5px;
+    box-shadow: 10px 30px 40px #6e2e8b5b;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+.PantallaAgregarItem:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+
+    transition: all 0.2s ease-out;
+}
+.icono_agregar{
+    width: 150px;
+    height: 150px;
+}
+
+/*-------------barra-------------------*/
+.barra{
+   background-color: #7C3D81;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.barra a{
+    float: inline-end;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 25px;
+    
+}
+.barra img{
+    padding: 10px;
+    padding-left: 15px;
+    width:170px;
+    height: auto;
+    float: left;
+}
+
+/*---------------barra sola----------------------------------------*/
+.barra_sola{
+    width: 100%;
+   background-color:#7C3D81;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+.barra_sola h1{
+ color: #f0f0f0;
+ padding: 1%;
+}
+.barra_sola img{
+    padding: 1%;
+}
+
+
+#barra1{
+ background-color: #CF7B9D;
+}
+
+#barra2{
+    background-color: #44006b;
+}
+
+/*----------------amueltos del juego-------------------*/
+
+.amuletos_juego{
+    width: 100%;
+    height: auto;
+    padding-top: 2%;
+    background-image: url("../img/salubra.png");
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    flex-direction: column;
+    
+    
+}
+
+.amuletos{
+    width: 60%;
+    height: 250px;
+    background-color: rgb(23, 0, 87);
+    display: flex;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    
+} 
+
+.datos_amuletos{
+    width: 70%;
+    padding: 2%;
+    color: #f0f0f0;
+}
+
+.imagen_amuletos{
+    width: 30%;
+    padding: 1%;
+   
+}
+.imagen_amuletos img {
+    width: 100%;
+    height: 100%;  
+    border-radius: 5px;
+}
+
+/*-------------imagen cambio amuletos----------------------*/
+#salubra1{
+    float: left;
+    width: 50%;
+    height: 50vh;
+    background-image: url("../img/fondoA.png");
+    background-size: cover;
+}

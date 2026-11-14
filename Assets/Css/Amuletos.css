@@ -357,3 +357,24 @@ button:hover{
     background-image: url("../img/fondoA.png");
     background-size: cover;
 }
+
+#audio_dis{
+    width: 40%;
+    background-color: #44006b;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+#audio_dis button{
+    width: 20px;
+    height: 10px;
+}
+
+#audio_dis img{
+    width: 100%;
+
+}
+

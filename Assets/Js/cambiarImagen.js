@@ -18,3 +18,14 @@ alert("click");
         cuadro3.style.backgroundImage = "url(img/salubra3.png)";
     }
 }
+
+/*--------------Audio---------------------------*/
+const audio = document.querySelector("#audio_dis");
+
+function inicio(){
+ audio.play();
+}
+
+function pausa(){
+audio.pause();
+}

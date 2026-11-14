@@ -8,12 +8,29 @@
         <title>Creaciond de amueltos</title>
     </head>
     <body>
-        <audio src="../Assets/Musica/amuletos.mp3" autoplay loop></audio>
+        
         <!--------------------barra inicio----------------------------------------->
          <div class="barra">
         <img src="../Assets/Imagenes/logo.png" alt="logo hollow">
+        
+        <div id="audio_dis">
+            <audio  src="../Assets/Musica/amuletos.mp3"></audio>
+
+            <button onclick= "inicio()"> 
+                <img src="/Assets/Imagenes/Actualizar.png">
+            </button>
+
+            <button onclick="pausa()">
+                <img src="/Assets/Imagenes/Actualizar.png">
+            </button>
+        </div>
+      
+
          <a href="../index.html">Ciervo Caminante</a>
-        </div><br><br>
+        </div>
+        <br><br>
+
+        
         <img src="../Assets/Imagenes/salubra.png" width="100%" height="90%">
 
         <!--------------------Barra crear amueltos----------------------------------------->
@@ -55,13 +72,12 @@
             </div>
         </div>
          <!--------------------Barra crear amueltos----------------------------------------->
-         <div class="barra_sola" id="barra2"><h1>- Amuletos de Hollow Knigth -</h1></div> 
- 
-          >
+         <div class="barra_sola" id="barra2"><h1>- Amuletos de Hollow Knight -</h1></div> 
+          
         <div id="salubra1" onclick="Cambio_imagen()"></div>
     
          <!--------------------Barra crear amueltos----------------------------------------->
-         <div class="barra_sola" id="barra1"><h1>- Amuletos de Hollow Knigth -</h1></div> 
+         <div class="barra_sola" id="barra1"><h1>- Amuletos de Hollow Knight -</h1></div> 
          <div class="amuletos_juego">
         </div>
          <div class="amuletos">
@@ -83,6 +99,6 @@
     
    
   
-    <script src="js/cambiarImagen.js"></script>
+    <script src="../Assets/Js/cambiarImagen.js"></script>
     <script src="../Assets/Js/conectarApi.js"></script>
 </html>

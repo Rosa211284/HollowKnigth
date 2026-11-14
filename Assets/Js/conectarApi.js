@@ -187,9 +187,11 @@ fetch(url_endpoint + "/amuletos").then(recurso => recurso.json()).then(amuletos 
     const descripcion_Amuletos = clon_amuletos.querySelector(".descripcion_Amuletos");
     descripcion_Amuletos.innerHTML = amuletos.arreglo[i].descripcion;
 
-    const imagen_amuletos = clon_amuletos.querySelector(".imagen_amuletos");
-     //imagen_amuletos.style.backgroundImage = "url(" + amuletos.arreglo[i].imagen+")";
-     imagen_amuletos.style.backgroundImage = amuletos.arreglo[i].imagen;
+    
+    const imagen_amuletos = clon_amuletos.querySelector("img");
+    console.log(imagen_amuletos);
+     imagen_amuletos.src = amuletos.arreglo[i].imagen2;
+     console.log(amuletos.arreglo[i].imagen2);
 
     }
 

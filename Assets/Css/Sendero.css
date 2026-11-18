@@ -3,6 +3,14 @@
     padding: 0%;
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
+:root {
+   /*Paleta de colores*/
+    --color-pri: #789ccd;
+    --color-se: #556ea3;
+    --color-ter: #313d6f;
+    --color-cuar: #182144;
+
+}
  
 html, body {
     width: 100%;

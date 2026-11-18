@@ -176,7 +176,7 @@ ColeccionItems.insertBefore(nuevaTarjeta, botonAgregar);
 /*-------------------------rellenar amuletos----------------------------------------------*/
 
 fetch(url_endpoint + "/amuletos").then(recurso => recurso.json()).then(amuletos =>{
-    console.log(amuletos);
+
    for(i= 0; i< amuletos.arreglo.length; i++){
     const clon_amuletos = plantilla_Amuletos.cloneNode(true);
     contenedor_Amuleltos.appendChild(clon_amuletos);
@@ -189,9 +189,9 @@ fetch(url_endpoint + "/amuletos").then(recurso => recurso.json()).then(amuletos 
 
     
     const imagen_amuletos = clon_amuletos.querySelector("img");
-    console.log(imagen_amuletos);
+    
      imagen_amuletos.src = amuletos.arreglo[i].imagen2;
-     console.log(amuletos.arreglo[i].imagen2);
+   
 
     }
 

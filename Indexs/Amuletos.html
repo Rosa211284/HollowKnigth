@@ -11,19 +11,30 @@
         
         <!--------------------barra inicio----------------------------------------->
          <div class="barra">
-        <img src="../Assets/Imagenes/logo.png" alt="logo hollow">
-        
-        <div id="audio_dis">
-            <audio  src="../Assets/Musica/amuletos.mp3"></audio>
+        <img src="../Assets/Imagenes/logo.png" alt="">
 
-            <button onclick= "inicio()"> 
-                <img src="/Assets/Imagenes/Actualizar.png">
-            </button>
-
-            <button onclick="pausa()">
-                <img src="/Assets/Imagenes/Actualizar.png">
-            </button>
+    <div class="audio_dis">
+    <div class="audio_info">
+        <img src="/Assets/Imagenes/Actualizar.png" alt="">
+        <div>
+            <h3>Música de Hallownest</h3>
+            <p>Reproductor de música</p>
         </div>
+    </div>
+
+    <audio id="musica" src="../Assets/Musica/amuletos.mp3"></audio>
+
+    <div class="audio_progreso">
+        <span id="tiempoActual">0:00</span>
+        <input type="range" id="progreso" value="0" min="0" max="100">
+        <span id="duracion">0:00</span>
+    </div>
+        <div class="audio_controles">
+        <button onclick="pausa()" type="button"><img src="/Assets/Imagenes/Actualizar.png" alt=""></button>
+        <button onclick="inicio()" type="button"><img src="/Assets/Imagenes/Actualizar.png" alt=""></button>
+    </div>
+
+</div>
       
 
          <a href="../index.html">Ciervo Caminante</a>
@@ -79,10 +90,10 @@
          <!--------------------Barra crear amueltos----------------------------------------->
          <div class="barra_sola" id="barra1"><h1>- Amuletos de Hollow Knight -</h1></div> 
          <div class="amuletos_juego">
-        </div>
-         <div class="amuletos">
+        
+            <div class="amuletos">
              <div class="imagen_amuletos">
-             <img src="">
+                <img src="">
             </div>
             <div class="datos_amuletos">
                 <h2 class="titulo_Amueltos"></h2><br>

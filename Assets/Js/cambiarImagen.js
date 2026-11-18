@@ -20,7 +20,7 @@ alert("click");
 }
 
 /*--------------Audio---------------------------*/
-const audio = document.querySelector("#audio_dis");
+const audio = document.querySelector("#audio");
 
 function inicio(){
  audio.play();

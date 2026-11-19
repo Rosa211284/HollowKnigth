@@ -7,17 +7,32 @@
     <title>Sendero Verde</title>
 </head>
 <body>
-    <div class="barra">
-        <img src="../Assets/Imagenes/logo.png" alt="logo hollow">
-        <nav>
-            <a href="../index.html">Ciervo Caminante</a>
-            <a href="./Amuletos.html">Amuletos</a>
-        </nav>
-         
-    </div>
-    <div class="barra_sola">
-            <audio src="../Assets/Musica/senderoVerde.mp3" autoplay loop></audio>
+   
+      <div class="barra">
+        <img src="../Assets/Imagenes/logo.png" alt="">
+
+    <div class="audio_dis" id="verde2">
+    <div class="audio_info">
+        <img src="../Assets/Imagenes/Actualizar.png" alt="">
+        <div>
+            <h3>Música de Hallownest</h3>
+            <p>Reproductor de música</p>
         </div>
+    </div>
+
+    <audio id="musica" src="../Assets/Musica/amuletos.mp3"></audio>
+        <div class="audio_controles" id="verde" >
+        <button onclick="inicio()" type="button"><img src="../Assets/Imagenes/Actualizar.png" alt=""></button>
+        <button onclick="pausa()" type="button"><img src="../Assets/Imagenes/Actualizar.png" alt=""></button>
+            </div>
+        </div>
+        <div class="sitios_web">
+            <a href="../index.html">Ciervo Caminante</a>
+         <a href="../Indexs/Amuletos.html">Amulettos</a>
+        </div>
+         
+        </div>
+        <br><br>
       <!------------------Efecto -Paralax----------------------------------------------->
      <section id="slider">
          <div id="content-images-slider">
@@ -164,59 +179,20 @@
      <!--------------------Barra sola---------------------------------------->
     <div class="barra_sola"><h1>Enemigos</h1></div>
 
+
     <!---------------Informacion imagenes --------------------->
+
     <div class="personas">
-    
+
         <div class="imagen-container">
         <img src="../Assets/Imagenes/enes.png">
         <div class="info-hover">
-            <h3>Musgoso</h3><br>
-            "A veces es dificil detectarlo entre el follaje. Cuando menos te lo esperas aparece a tu lado y carga todo contra ti."</div>
-    </div>
-
-   <div class="imagen-container">
-        <img src="../Assets/Imagenes/enes1.png">
-        <div class="info-hover">
-            <h3>Trepamusgo</h3><br>
-            "Solia pensar que estas cosas no eran mas que plantas caminantes. Cuando descubri que en realidad eran criaturas vivas."</div>
-    </div>
-    
-    <div class="imagen-container">
-        <img src="../Assets/Imagenes/enes2.png">
-        <div class="info-hover">
-            <h3>Trepamusgo</h3><br>
-            A veces es dificil detectarlo entre el follaje. Cuando menos te lo esperas aparece a tu lado y carga todo contra ti."</div>
-    </div>
-   <div class="imagen-container">
-        <img src="../Assets/Imagenes/enes3.png">
-        <div class="info-hover">
-            <h3>Nombre</h3><br>
-           A veces es dificil detectarlo entre el follaje. Cuando menos te lo esperas aparece a tu lado y carga todo contra ti."</div>
-    </div>
-
-    <div class="imagen-container">
-        <img src="../Assets/Imagenes/enes4.png">
-        <div class="info-hover">
-            <h3>Nombre</h3><br>
-            "A veces es dificil detectarlo entre el follaje. Cuando menos te lo esperas aparece a tu lado y carga todo contra ti."</div>
-    </div>
-
-    <div class="imagen-container">
-        <img src="../Assets/Imagenes/enes5.png">
-        <div class="info-hover">
-            <h3>Nombre</h3><br>
-           A veces es dificil detectarlo entre el follaje. Cuando menos te lo esperas aparece a tu lado y carga todo contra ti."</div>
-    </div>
-
-    <div class="imagen-container">
-        <img src="../Assets/Imagenes/enes6.png">
-        <div class="info-hover">
-            <h3>Nombre</h3><br>
-            "A través de la música, los niños no solo se expresan… se liberan."</div>
+            <h3 id="nombre_enemigo">Musgoso</h3><br>
+            <p id="descripcion_enemigos"> "A veces es dificil detectarlo entre el follaje. Cuando menos te lo esperas aparece a tu lado y carga todo contra ti."</div></p>
     </div>
     
 </div>
-
+<!--------
  <div class="personas">
     <div class="imagen-container">
        <img src="../Assets/Imagenes/enes7.png">
@@ -262,7 +238,7 @@
         <div class="info-hover">
             <h3>Nombre</h3><br>
             "A través de la música, los niños no solo se expresan… se liberan."</div>
-    </div>
+    </div>----->
      <!-----------Slider movible 7w7----------------------->
         <div id="slider"></div>
         
@@ -302,7 +278,10 @@
 <footer>
     <div class="barra_sola"><img src="../Assets/Imagenes/logo.png" width="10%"></div>
 </footer>
+<script src="../Assets/Js/conectarApi.js"></script>
 <script src="../Assets/Js/movimiento_personajes.js"></script>
+<script src="../Assets/Js/cambiarImagen.js"></script>
 <script src="../Assets/Js/rellax.min.js"></script>
 <script src="../Assets/Js/index.js"></script>
+
 </html>

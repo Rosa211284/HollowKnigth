@@ -12,6 +12,9 @@ const plantilla_Amuletos = document.querySelector(".amuletos");
 const url_endpoint = "http://localhost:3000";
 plantilla_Amuletos.remove();
 
+/*------------------------------plantilla villanos --------------------------------------------------------*/
+const contenedor_enemigos = document.querySelector(".personas");
+const plantilla_enemigos = document.querySelector(".imagen-container");
 
 
 fetch(url_endpoint + "/informacion_tarjetas").then(recurso => recurso.json()).then(respuesta=>{
@@ -189,19 +192,30 @@ fetch(url_endpoint + "/amuletos").then(recurso => recurso.json()).then(amuletos 
 
     
     const imagen_amuletos = clon_amuletos.querySelector("img");
-    
      imagen_amuletos.src = amuletos.arreglo[i].imagen2;
-   
 
     }
 
 });
 
-
 /*-----------------------------Sendero Verde personajes-----------------------------------*/
-   
-const contenedor_enemigos = document.querySelector(".personas");
-const plantilla_enemigos = document.querySelector(".imagen-container");
+fetch(url_endpoint + "/enemigo_Sendero").then(recurso => recurso.json()).then(enemigos =>{
+    console.log(enemigos);
+    /* for(i= 0; i< enemigos.arreglo.length; i++){
+        const clon_enemigos = plantilla_enemigos.cloneNode(true);
+        contenedor_enemigos.appendChild(clon_enemigos);
+
+        const titulo_enemigos = clon_enemigos.querySelector("#nombre_enemigo");
+        titulo_enemigos.innerHTML = enemigos.arreglo[i].titulo;
+
+        const descripcion_enemigos = clon_enemigos.querySelector("descripcion_enemigo");
+        descripcion_enemigos.innerHTML = enemigos.archivo[i].descripcion;
+
+        const imagen_enemigos = clon_enemigos.querySelector("img");
+        imagen_enemigos.src = enemigos.arreglo[i].imagen2;
+
+     }*/
+});
 
 
 

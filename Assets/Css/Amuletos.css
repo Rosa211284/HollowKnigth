@@ -385,10 +385,14 @@ button:hover{
     background-size: cover;
 }
 
+#verde{
+background: #75429a;
+}
+
 .audio_dis {
     width: 30%;
     padding: 15px;
-    background: #75429a;
+    
     border-radius: 5px;
     display: flex;
     gap: 15px;
@@ -427,24 +431,33 @@ button:hover{
     justify-content: center;
     align-items: center;
     gap: 15px;
+    background-color: #44006b;
+    width: 40%;
+    padding: 0%;
+    border-radius: 5px;
+    border: #000000 2px;
     
 }
 
 .audio_controles button {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
     border: none;
-    border-radius: 50%;
-    background-color: #75429a;
-    color: white;
-    font-size: 18px;
+    background: transparent;
     cursor: pointer;
-    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    
 }
 
 .audio_controles img {
     width: 100%;
     height: 100%;
+    align-items: center;
+    justify-content: center;
     object-fit: contain;
 }
 
@@ -453,18 +466,8 @@ button:hover{
     transform: scale(1.1);
 }
 
-/* Barra de progreso */
-.audio_progreso {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: white;
-    font-size: 11px;
-}
 
-.audio_progreso input {
-    flex: 1;
-    accent-color: #c49be5;
-    cursor: pointer;
-}
+
+
+
 

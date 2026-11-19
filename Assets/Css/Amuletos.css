@@ -58,7 +58,7 @@ header div{
 #contenido-centrado{
     float: left;
     width: 100%;
-    background-image: url("/Assets/Imagenes/s1.JPG");
+    background-image: url("../Imagenes/s1.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -377,12 +377,19 @@ button:hover{
 
 
 /*-------------imagen cambio amuletos----------------------*/
-#salubra1{
-    float: left;
-    width: 50%;
-    height: 50vh;
-    background-image: url("../img/fondoA.png");
+#salubra_cambioImagen{
+    width: 80%;
+    height: 80vh;
+    background-image: url("../Imagenes/a1.png");
+    display: flex;
     background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 2%;
+   
+    
 }
 
 #verde{

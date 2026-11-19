@@ -1,23 +1,26 @@
-
-const salubra1 = document.querySelector("#salubra1")
+const cuadro3 = document.querySelector("#salubra_cambioImagen");
 
 var salubra = 1;
 
-function Cambio_imagen(){
-alert("click");
-  if(salubra == 1){
-        salubra = 2;
-        cuadro3.style.backgroundImage = "url(../img/salubra.png)";
-    }
-    /*if(salubra == 2){
-        salubra = 2;
-        cuadro3.style.backgroundImage = "url(img/salubra2.png)";
-    }*/
-    else{
+function Cambio_imagen() {
+
+    salubra++;
+
+    if (salubra > 3) {
         salubra = 1;
-        cuadro3.style.backgroundImage = "url(img/salubra3.png)";
+    }
+
+    if (salubra == 1) {
+        cuadro3.style.backgroundImage = "url('../Assets/Imagenes/a2.png')";
+    }
+    else if (salubra == 2) {
+        cuadro3.style.backgroundImage = "url('../Assets/Imagenes/a3.png')";
+    }
+    else if (salubra == 3) {
+        cuadro3.style.backgroundImage = "url('../Assets/Imagenes/salubra2.png')";
     }
 }
+
 
 /*--------------Audio---------------------------*/
 const audio = document.querySelector("audio");

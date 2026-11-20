@@ -16,6 +16,11 @@
     --color-barraS:#09121D; 
     --color-verde2: #033736;
 
+    /*-----ciudad---------*/
+     --color-c1: #122A45;
+    --color-c2:#122A45; 
+    --color-c3:#09152A; 
+    --color-c4: #5B6579;
 
 
 }
@@ -64,7 +69,7 @@ html, body {
 /*---------------barra sola----------------------------------------*/
 .barra_sola{
     width: 100%;
-    background-color: var(--color-barraS);
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,6 +78,14 @@ html, body {
 .barra_sola h1{
  color: #f0f0f0;
  padding: 1%;
+}
+
+#barra_sola_ciudad{
+    background-color: var(--color-c3);
+}
+
+#barra_sola_sendero{
+    background-color: var(--color-verde2);
 }
 
 
@@ -125,12 +138,22 @@ section#content {
     width: 100%;
     padding-top: 2%;
     padding-bottom:5%;
-    background-image: url("../Imagenes/s2.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #f0f0f0;
+    color: #f0f0f0; 
+}
+
+#sendero_info{
+    background-image: url("../Imagenes/s2.png");
+}
+
+#ciudad_info{
+     background-image: url("../Imagenes/ciudad6.png");
     
+}
+#paramos_info{
+    background-image: url("../Imagenes/p6.png");
 }
 .info_texto{
     width: 100%;
@@ -163,19 +186,27 @@ section#content {
     width: 100%;
     height: auto;
     padding-top: 2%;
-    background-image: url("../Imagenes/fondoS2.png");
     background-size: cover;
-    background-position: center;
     overflow: hidden;
 }
+#personajes_sendero{
+ background-image: url("../Imagenes/s2.png");
+}
+
+#personajes_ciudad{
+ background-image: url("../Imagenes/habC6.png");
+}
+#personajes_paramos{
+ background-image: url("../Imagenes/p11.png");
+}
+
 
 .personajes{
-    width: 60%;
-    height: 60%;
-    height: 250px;
-    background-color:var(--color-verde);
-    display: flex;
-    margin-bottom: 5%;
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     opacity: 0;
     transform: translateX(-150px);
     transition: 
@@ -188,16 +219,12 @@ section#content {
     transform: translateX(0);
 }
 
-
-
 .personajes2{
-    float: right;
-    width: 60%;
-    height: 60%;
-    height: 250px;
-   background-color:var(--color-verde);
     display: flex;
-    margin-bottom: 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     opacity: 0;
     transform: translateX(150px);
     transition: 
@@ -214,6 +241,8 @@ section#content {
 .datos_personajes{
     width: 70%;
     text-align: center;
+    
+    justify-content: center;
     padding: 2%;
     color: #f0f0f0;
 }
@@ -236,14 +265,26 @@ section#content {
     flex-wrap: wrap;
     font-style: italic;
     font-size: 100%;
-    background-image: url("../Imagenes/fondoS2.png");
+    
+    background-size: cover;
+    background-position: center;
 
 }
+#enemigos_ciudad{
+     background-image: url("../Imagenes/habC7.png");
+}
 
+#enemigos_sendero{
+    background-image: url("../Imagenes/fondoS2.png");
+}
+
+#enemigos_paramos{
+    background-image: url("../Imagenes/p12.png");
+}
 
 .personas img {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     border-radius: 10px;
 }
 
@@ -296,9 +337,9 @@ section#content {
 #slider{
     width: 1800px;
     height: 90px;
-    background-image: url("../Imagenes/carruusel2.png");
     background-size: 100% 100%;
     animation: slider 40s infinite linear;
+ 
     position: relative; 
     z-index: 1;
     padding-bottom: 20px;
@@ -307,12 +348,25 @@ section#content {
     to{background-position: 1200px;}
 }
 
+.sliderC{
+    background-image: url("../Imagenes/carruusel1.png");
+}
+
+.sliderS{
+     background-image: url("../Imagenes/carruusel1.png");
+}
+.sliderP{
+     background-image: url("../Imagenes/carruusel3.png");
+}
+
+
+
 /*--------------------------AREAS-----------------------------------*/
 .apartado_areas{
     width: 100%;
     height: auto;
     padding-top: 2%;
-    background-image: url("../Imagenes/fondoS2.png");
+   
     background-size: cover;
     background-position: center;
     display: flex;
@@ -321,10 +375,21 @@ section#content {
     flex-direction: column;
     
 }
+#apartado_areasS{
+ background-image: url("../Imagenes/fondoS2.png");
+}
+#apartado_areasC{
+     background-image: url("../Imagenes/ciudad6.png");
+}
+#apartado_areasP{
+     background-image: url("../Imagenes/p11.png");
+}
+
+
+
 .Areas{
   width: 60%;
-    height: 60%;
-    height: 250px;
+    height:400px;
     background-color: rgba(0, 0, 0, 0.623);
     display: flex;
     margin-bottom: 5%;
@@ -342,7 +407,7 @@ section#content {
 
 .imagen_area{
     width: 40%;
-    height: 100%;
+    height: 90%;
    
 }
 .imagen_area img {
@@ -351,6 +416,12 @@ section#content {
 }
 
 /*---------------Audio botones---------------------------------*/
+#audio_dis_ciudad{
+    background-color: var(--color-c1);
+}
+#audio_controles_ciudad{
+    background-color: var(--color-c4);
+}
 #verde{
    background-color: var(--color-verde);
 }
@@ -361,6 +432,7 @@ section#content {
     background-color: rgb(7, 98, 96);
 }
 .audio_dis {
+    margin: 15px;
     width: 25%;
     padding: 15px;
     border-radius: 5px;
@@ -413,7 +485,7 @@ section#content {
     width: 55px;
     height: 55px;
     padding: 5px;
-border: none;
+    border: none;
     border-radius: 50%;
     background: transparent;
     cursor: pointer;

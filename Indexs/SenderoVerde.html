@@ -8,7 +8,7 @@
 </head>
 <body>
    
-      <div class="barra">
+      <div class="barra" >
         <img src="../Assets/Imagenes/logo.png" alt="">
 
     <div class="audio_dis" id="verde2">
@@ -20,7 +20,7 @@
         </div>
     </div>
 
-    <audio id="musica" src="../Assets/Musica/amuletos.mp3"></audio>
+    <audio id="musica" src="../Assets/Musica/senderoVerde.mp3"></audio>
         <div class="audio_controles" id="verde" >
         <button onclick="inicio()" type="button"><img src="../Assets/Imagenes/play.png" alt=""></button>
         <button onclick="pausa()" type="button"><img src="../Assets/Imagenes/pausa.png" alt=""></button>
@@ -45,9 +45,9 @@
      </section>
 
     <!--------------------Barra sola---------------------------------------->
-    <div class="barra_sola"><br><br></div>
+    <div class="barra_sola" id="barra_sola_sendero" ><br><br></div>
     <!--------------------Informacion de sendero Verde---------------------------------------->
-                <div class="info">
+                <div class="info" id="sendero_info">
                     <div class="info_texto">
                     <img src="../Assets/Imagenes/s1.JPG">
                     <div class="texto">
@@ -62,7 +62,7 @@
                 </div>
                 </div>
     <!--------------------Barra sola---------------------------------------->
-    <div class="barra_sola"><br><br></div>
+    <div class="barra_sola" id="barra_sola_sendero"><br><br></div>
     
      <!--------------------Mapa de la zona---------------------------------------->
      <div class="mapa">
@@ -70,21 +70,21 @@
      </div>
    
      <!--------------------Barra sola---------------------------------------->
-    <div class="barra_sola"><h1>Habitantes</h1></div>
+    <div class="barra_sola" id="barra_sola_sendero"><h1>Habitantes</h1></div>
 
     <!--------------------seccion de habitantes---------------------------------------->
-    <div class="habitantes"><br><br>
+    <div class="habitantes" id="personajes_sendero"><br><br>
 
         <!----------------p1------------------------->
-        <div class="personajes">
-            <div class="datos_personajes">
+        <div class="personajes" >
+             <div class="imagen_personaje">
+             <img src="../Assets/Imagenes/habS1.png">
+            </div>
+             <div class="datos_personajes">
                 <h2>El Cazador</h2><br>
                 <p>Enclenque insignificante... Te acercas sin temor. ¿Eres un cazador como yo?
                 ¿Sientes la necesidad de acechar, de matar, de entender? <br><br>
                     <b>¡Si es así, cógelo! Mi diario. Te ayudará. Al principio te será difícil comprenderlo, pero un cazador experimentado logrará entender sus palabras.</b> </p> 
-            </div>
-             <div class="imagen_personaje">
-             <img src="../Assets/Imagenes/habS1.png">
             </div>
             </div>
         <!----------------p2------------------------->
@@ -101,13 +101,13 @@
         </div>
          <!----------------p1------------------------->
         <div class="personajes">
-            <div class="datos_personajes">
+             <div class="imagen_personaje">
+             <img src="../Assets/Imagenes/habS3.png">
+            </div>
+             <div class="datos_personajes">
                 <h2>Quirrel</h2><br>
                 <p>Oh, ¡hola! Parece que ambos nos hemos alejado del sendero.¡Me cuesta creer que esos viejos y sucios caminos lleven a un lugar tan vivo y exuberante! <br><br>
                     <b>He visto a un tipo extraño ahí fuera. Parecía bastante ensimismado con el lago.</b> </p> 
-            </div>
-             <div class="imagen_personaje">
-             <img src="../Assets/Imagenes/habS3.png">
             </div>
         </div>
 
@@ -124,7 +124,10 @@
         </div>
          <!----------------p1------------------------->
         <div class="personajes">
-            <div class="datos_personajes">
+             <div class="imagen_personaje">
+            <img src="../Assets/Imagenes/habS8.png">
+            </div>
+             <div class="datos_personajes">
                 <h2>Cornifer</h2><br>
                 <p>Hmm? Ah, hola. ¿Has venido a explorar estas preciosas aunque viejas ruinas? Si es así, ignórame. 
                     Me encanta explorar. Perderse y volver a encontrar el camino es un placer como ningún otro. 
@@ -132,18 +135,15 @@
                     Soy cartógrafo, y ahora mismo estoy dibujando esta zona. <br><br>
                     <b>¿Te gustaría comprar lo que llevo hasta ahora?</b> </p> 
             </div>
-             <div class="imagen_personaje">
-            <img src="../Assets/Imagenes/habS8.png">
-            </div>
         </div><br>
     </div>
      <!--------------------Barra sola---------------------------------------->
-    <div class="barra_sola"><h1>Enemigos</h1></div>
+    <div class="barra_sola" id="barra_sola_sendero"><h1>Enemigos</h1></div>
 
 
     <!---------------Informacion imagenes --------------------->
 
-    <div class="personas">
+    <div class="personas" id="enemigos_sendero">
     <div class="imagen-container">
         <img src="../Assets/Imagenes/enes.png">
         <div class="info-hover">
@@ -156,17 +156,18 @@
         </div>
     </div>
     </div>
+  
     
 </div>
 <!-----------Slider movible 7w7----------------------->
-        <div id="slider"></div>
         
+          <div id="slider" class="sliderS"></div>
 </div>
 
  <!--------------------Barra sola---------------------------------------->
-    <div class="barra_sola"><h1>Sub Areas</h1></div>
-    <div class="apartado_areas">
-            <div class="Areas">
+    <div class="barra_sola" id="barra_sola_sendero"><h1>Sub Areas</h1></div>
+    <div id="apartado_areasS" class="apartado_areas">
+            <div class="Areas" >
             <div class="datos_area">
                 <h2>Santuario de Piedra</h2><br>
                 <p>Un oscuro santuario lleno de espinas al sureste de Sendero Verde. Se recomienda comprar antes Linterna de lumélula. Aquí se encuentra la tumba de Sin Ojos.</b> </p> 
@@ -187,7 +188,7 @@
         </div>
 </body>
 <footer>
-    <div class="barra_sola"><img src="../Assets/Imagenes/logo.png" width="10%"></div>
+    <div class="barra_sola" id="barra_sola_sendero"><img src="../Assets/Imagenes/logo.png" width="10%"></div>
 </footer>
 <script src="../Assets/Js//senderoV.js"></script>
 <script src="../Assets/Js/movimiento_personajes.js"></script>

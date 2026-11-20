@@ -20,3 +20,14 @@ fetch(url_endpoint + "/enemigo_Sendero").then(recurso => recurso.json()).then(en
     }
 
 });
+
+
+
+
+
+
+
+
+
+
+

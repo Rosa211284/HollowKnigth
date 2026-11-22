@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-family: "IBM Plex Serif", serif;
 }
 :root {
    /*Paleta de colores*/
@@ -22,6 +22,10 @@
     --color-c3:#09152A; 
     --color-c4: #5B6579;
 
+    /*---------Cruces olvidados----------------*/
+    --color-cru1: #09121D;
+    --color-cru2: #182144;
+    --color-cru1: #182144;
 
 }
  
@@ -86,6 +90,10 @@ html, body {
 
 #barra_sola_sendero{
     background-color: var(--color-verde2);
+}
+
+#barra_sola_cruces{
+    background-color: var(--color-cru1);
 }
 
 
@@ -155,6 +163,11 @@ section#content {
 #paramos_info{
     background-image: url("../Imagenes/p6.png");
 }
+
+#cruces_info{
+    background-image: url("../Imagenes/fondoinicio.png");
+}
+
 .info_texto{
     width: 100%;
     display: flex;
@@ -200,9 +213,14 @@ section#content {
  background-image: url("../Imagenes/p11.png");
 }
 
+#personajes_cruces{
+ background-image: url("../Imagenes/fondoinicio.png");
+}
+
 
 .personajes{
    display: flex;
+   border-radius: 5px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -240,15 +258,16 @@ section#content {
 
 .datos_personajes{
     width: 70%;
+
     text-align: center;
-    
     justify-content: center;
     padding: 2%;
     color: #f0f0f0;
 }
 
 .imagen_personaje{
-    width: 30%;
+    width: 25%;
+    border-radius: 5px;
    
 }
 .imagen_personaje img {
@@ -265,7 +284,6 @@ section#content {
     flex-wrap: wrap;
     font-style: italic;
     font-size: 100%;
-    
     background-size: cover;
     background-position: center;
 
@@ -280,6 +298,10 @@ section#content {
 
 #enemigos_paramos{
     background-image: url("../Imagenes/p12.png");
+}
+
+#enemigos_cruces{
+    background-image: url("../Imagenes/cru9.png");
 }
 
 .personas img {
@@ -335,11 +357,10 @@ section#content {
 
 /*---------- Slider ----------*/
 #slider{
-    width: 1800px;
+    width: 100%;
     height: 90px;
     background-size: 100% 100%;
     animation: slider 40s infinite linear;
- 
     position: relative; 
     z-index: 1;
     padding-bottom: 20px;
@@ -359,6 +380,10 @@ section#content {
      background-image: url("../Imagenes/carruusel3.png");
 }
 
+.sliderCru{
+     background-image: url("../Imagenes/carruusel2.png");
+}
+
 
 
 /*--------------------------AREAS-----------------------------------*/
@@ -366,7 +391,6 @@ section#content {
     width: 100%;
     height: auto;
     padding-top: 2%;
-   
     background-size: cover;
     background-position: center;
     display: flex;
@@ -384,6 +408,10 @@ section#content {
 #apartado_areasP{
      background-image: url("../Imagenes/p11.png");
 }
+#apartado_areasCru{
+     background-image: url("../Imagenes/cru5.png");
+}
+
 
 
 
@@ -422,6 +450,9 @@ section#content {
 #audio_controles_ciudad{
     background-color: var(--color-c4);
 }
+#audio_controles_cruces{
+    background-color: var(--color-c4);
+}
 #verde{
    background-color: var(--color-verde);
 }
@@ -434,7 +465,7 @@ section#content {
 .audio_dis {
     margin: 15px;
     width: 25%;
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
     display: flex;
     gap: 15px;
@@ -451,7 +482,7 @@ section#content {
 
 .audio_info img {
     width: 55px;
-    height: 55px;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
 }

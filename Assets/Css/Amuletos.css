@@ -2,7 +2,7 @@
 *{
     padding: 0;
     margin: 0;
-     font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-family: "IBM Plex Serif", serif; 
 }
 
 .PanelCreacionItem{
@@ -110,11 +110,12 @@ header div{
 
 
 .Icono_Borrar{
-    top: 60px;
+    top: 40px;
     right: 10px;
     position: absolute;
-    width: 70px;
+    width: 60px;
     transition: all 0.1s ease-out;
+    background-color: white;
 }
 .Icono_Borrar:hover{
     opacity: 0.9;
@@ -123,11 +124,12 @@ header div{
 }
 
 .Icono_Editar{
-    top: 120px;
+    top: 110px;
     right: 10px;
     position: absolute;
-    width: 70px;
-    opacity: 0.6;
+    width: 60px;
+   
+    background-color: white;
 }
 .Icono_Editar:hover{
     cursor: pointer;
@@ -136,9 +138,10 @@ header div{
 }
 
 .Descripcion{
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
+    padding: 5px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -314,7 +317,6 @@ button:hover{
     padding: 40px 5%;
     flex-wrap: wrap;
     font-style: italic;
-    font-size: 20px;
     background-image: url("../Imagenes/fondoS2.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -369,6 +371,15 @@ button:hover{
     transition: opacity 0.3s ease;
 }
 
+.datos_amuletos h1{
+    font-size: 2.rem;
+}
+
+
+.datos_amuletos p{
+    font-size: 1.rem;
+}
+
 .amuletos:hover .datos_amuletos {
     opacity: 1;
 }
@@ -399,7 +410,8 @@ background: #75429a;
 
 .audio_dis {
    width: 25%;
-    padding: 15px;
+   margin: 15px;
+    padding: 10px;
     border-radius: 5px;
     display: flex;
     gap: 15px;
@@ -416,7 +428,7 @@ background: #75429a;
 
 .audio_info img {
     width: 55px;
-    height: 55px;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
 }

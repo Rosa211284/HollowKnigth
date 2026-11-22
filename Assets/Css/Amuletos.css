@@ -27,12 +27,9 @@ body{
     background-size: 100%;
     background-color: #000000;
 }
-
 header{
     height: 250px;
-  
 }
-
 header img{
     width: 1200px;
     max-width: 100%;
@@ -157,19 +154,14 @@ header div{
     transition: bottom 0.2s ease-out;
 }
 
-
 .Descripcion:hover{
     opacity: 1;
 }
 
-
-
 .PanelCreacionItem div{
     padding-top: 10px;
     padding-bottom: 10px;
-    
 }
-
 .CrearItem_titulo{
     width: calc(100%);
 }
@@ -177,14 +169,12 @@ header div{
 .CrearItem_instruccionImagen{
     width: 100%;
 }
-
 .PanelCreacionItem input{
     font-size: 18px;
     width: calc(100% - 40px);
     padding: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    
     border: none;
 }
 
@@ -192,12 +182,9 @@ header div{
     width: 100%;
     height: 100px;
 }
-
 .Campo_Descripcion{
     height: 200px;
 }
-
-
 textarea{
     font-size: 18px;
     width: calc(100% - 40px);
@@ -320,10 +307,9 @@ button:hover{
     background-image: url("../Imagenes/fondoS2.png");
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
-    
-    
+    text-align: center;   
 }
+
 .amuletos img{
     height: 350px;
     width: 350px;
@@ -334,7 +320,6 @@ button:hover{
     display: inline-block;
     overflow: hidden;
     border-radius: 5px;
-    
 } 
 
 .amuletos img {
@@ -355,7 +340,6 @@ button:hover{
 .amuletos:hover::after {
     background-color: rgba(0, 0, 0, 0.7);
 }
-
 
 .datos_amuletos{
     position: absolute;
@@ -384,10 +368,6 @@ button:hover{
     opacity: 1;
 }
 
-
-
-
-
 /*-------------imagen cambio amuletos----------------------*/
 #salubra_cambioImagen{
     width: 80%;
@@ -401,7 +381,6 @@ button:hover{
     margin: auto;
     padding: 2%;
    
-    
 }
 
 #verde{
@@ -455,7 +434,6 @@ background: #75429a;
     padding: 0%;
     border-radius: 5px;
     border: #000000 2px;
-    
 }
 
 .audio_controles button {
@@ -469,7 +447,6 @@ background: #75429a;
     align-items: center;
     justify-content: center;
     object-fit: contain;
-    
 }
 
 .audio_controles img {
@@ -484,9 +461,3 @@ background: #75429a;
     background-color: #a77bc5;
     transform: scale(1.1);
 }
-
-
-
-
-
-

@@ -14,7 +14,7 @@ fetch(url_endpoint + "/enemigo_Ciudad").then(recurso => recurso.json()).then(ene
 
         const descripcion_enemigos = clon_enemigos.querySelector(".descripcion_enemigos");
         descripcion_enemigos.innerHTML = enemigos.arreglo[j].descripcion;
-
+        
         const imagen_enemigos = clon_enemigos.querySelector("img");
         imagen_enemigos.src = enemigos.arreglo[j].imagen2; 
 

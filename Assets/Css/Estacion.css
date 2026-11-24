@@ -50,9 +50,6 @@ body{
 }
 
 
-#izquierda hr{
-    width: 60%;  
-}
 
 
 #derecha{
@@ -64,7 +61,6 @@ body{
 }
 
 #izquierda a{
-   
     text-decoration: none;
     color: aliceblue;
     transition: all 0.3s ease;

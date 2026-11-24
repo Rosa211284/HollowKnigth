@@ -36,10 +36,10 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
 }
 
 $nombre = trim($_POST["nombre"] ?? "");
-$contra = ($_POST["contra"] ?? "");
 $correo = trim($_POST["correo"] ?? "");
+$novedades = trim($_POST["novedades"] ?? "0");
 
-if ($nombre === "" || $contra === "" || $correo === "") {
+if ($nombre === "" || $correo === "") {
 
     echo json_encode([
         "status" => "error",
@@ -49,9 +49,8 @@ if ($nombre === "" || $contra === "" || $correo === "") {
     exit;
 }
 
-$contra_hash = password_hash($contra, PASSWORD_DEFAULT);
 
-$sql = "INSERT INTO contacto(nombre, contra, correo) VALUES (?, ?, ?)";
+$sql = "INSERT INTO contacto(nombre, correo, novedades) VALUES (?, ?, ?)";
 
 $statement = $conn->prepare($sql);
 
@@ -70,8 +69,8 @@ if (!$statement) {
 $statement->bind_param(
     "sss",
     $nombre,
-    $contra_hash,
-    $correo
+    $correo,
+    $novedades
 );
 
 

@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Assets/Css/Registro.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="../Assets/Imagenes/Actualizar.png" type="image/x-icon">
+   
     <title>Formulario para php de contacto 7w7</title>   
 </head>
 <body>
-    <div class="contenedor__seccion--contacto"><!----metodologia de bemm giones-->
-        <div class="contenedor__formulario--contacto">
-        <h2>Bienvenido a Hallownest</h2>
-                <p>Registrate para poder conocer más acerca de Hallownest</p>
-           
-            </div>
 
+    <audio src="../Assets/Musica/paramosF.mp3" autoplay loop></audio>
+  
+    <div class="contenedor__seccion--contacto">
+        
                 <!----Formulario----->
                 <form class="formulario-contacto">
-                    
+
                      <!----contenedor de los inputs----->
                     <div class="formulario-contacto">
+                        <h2>Bienvenido a Hallownest</h2>
+                        <p>Registrate para poder conocer más acerca de Hallownest</p>
       
                         <div class="formulario-contacto__input">
                          <p>Nombre del usuario</p>
                             <input type="text" name="nombre" placeholder="Nombre(s)">
                             <small class="error" id="error-nombre"></small>
                         </div>
+
+                        
                     </div>
 
                
@@ -36,7 +39,8 @@
                             <p>Correo</p>
                             <input type="text" name="correo" placeholder="example@gmail.com">
                             <small class="error" id="error-correo"></small>
-                        </div>
+                        </div> <br><br>
+            <label><input type="checkbox"  name="novedades" value="1"> Acepto recibir novedades y comentarios de mi cuenta.</label>
             
              <br><br>
 
@@ -62,6 +66,7 @@
 
 </body>
 <script type="module" src="../Assets/Js/Formulario_Contacto.js"></script>
+
 
 <!---tarea fontawesome--->
 
